@@ -1,0 +1,240 @@
+@font-face {font-family: inter; src: url('Inter-SemiBold.ttf');}
+
+body {
+    font-family: inter;
+    width: 100%;
+    height: 100vh;
+    background-color: #000405;
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+textarea
+{
+    background-color:#001C23;
+    border-radius: 10px;
+    border-color: #001C23;
+    resize: none;
+    color: white;
+    height: 20px;
+    width: 300px;
+    font-size: 14px;
+    transition-duration: 300ms;
+    border-style:solid;
+    font-family: inter;
+    font-weight:100px;
+}
+
+textarea:focus
+{
+    outline: none;
+    border-color: #1a8cd9;
+    transition-duration: 300ms;
+    height: 150px;
+    width: 400px;
+    background: transparent;
+    
+    
+}
+
+input
+{
+    font-family: inter;
+}
+
+/* USER PROFILE */
+
+
+
+.userProfile
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.inline
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inline-bottom
+{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#postButton
+{
+    border: none;
+    background-color: #1a8cd9;
+    position: absolute;
+    margin-left: 45px;
+    border-radius: 20px;
+    color: white;
+    padding: 5px;
+    font-size: 13px;
+    font-family: inter;
+    cursor:pointer;
+}
+
+#outerTextArea
+{
+    vertical-align: bottom;
+    margin-bottom: 0px;
+}
+
+#charactersLeft
+{
+    margin-top: 7px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    position: absolute;
+    font-size: 12px;
+
+}
+
+#user_image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+#user_name
+{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+#user_id
+{
+    font-size: 15px;
+    color:rgb(61, 80, 85)
+}
+
+#accountButton
+{
+    height: 50px;
+    width: 100px;
+}
+
+#search_box
+{
+    height: 45px;
+    width: 500px;
+    background-color: #001C23;
+    margin: auto;
+    border-radius: 50px;
+    text-align: left
+}
+
+#searchPng
+{
+    height: 35px;
+    width: 35px;
+    margin-top: 0;
+    align-items: left;
+    margin-left: 20px;
+}
+
+#search_text
+{
+    margin-left: 10px;
+
+    color: rgb(25, 65, 76)
+}
+
+#searchinput
+{
+    background: transparent;
+    border-radius: 10px;
+    height: 45px;
+    width: 400px;
+    margin-top: 0px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+#s_list
+{
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+input :focus{
+
+    outline: none;
+}
+
+.profile
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'user header header header header header right'
+      'followers main main main main main right'
+      'settings main main main main main right';    
+    
+    grid-template-columns: 20% auto auto 0%;
+    grid-template-rows: 100px 70% 20%;
+    height: 100%;
+
+}
+  
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.user
+{
+    grid-area: user;
+
+    padding-top: 10px;
+    border-right: solid;
+
+    
+}
+
+.header
+{
+    grid-area: header;
+    border-bottom: solid 1px #001C23;
+}
+
+.followers
+{
+    grid-area: followers;
+    border-right: solid;
+}
+
+.main
+{
+    grid-area: main;
+    
+}
+
+.settings
+{
+    grid-area: settings;
+    border-right: solid;
+}
+
+.feed
+{
+    grid-area: right;
+    border-left: solid;
+}
+
